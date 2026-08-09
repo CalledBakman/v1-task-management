@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c2ca65d6-4b60-4ef2-8a99-f945d880f942" name="Changes" comment="implementing the process of removing an Employee from unit :&#10; &#10; - This process will just remove the Employment object of employee from the unit and not deleting all the data about the Employment&#10; - Adding the endpoint to the Controller layer&#10; - Adding the removeEmployee method to the service layer&#10; - Change logic of the unit part of the AuthorizationManager to perform the removeEmployee method but it's not done" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_D:/Programming/Final V1/TaskManagement-System" value="30VRTXK9JcD1GXGgB9J7fUM5V58" />
+    </persistenceIdMap>
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/task-service">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="task-service" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;artinasd&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/CalledBakman/TaskManagement-System&quot;,
+    &quot;accountId&quot;: &quot;f929703f-9cc9-417a-a6e5-3e49c8b7b3ea&quot;
+  }
+}</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="30VRTXK9JcD1GXGgB9J7fUM5V58" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.task.executor": "Run",
+    "Gradle.D:/Programming/Final V1/TaskManagement-System/task-service/build.gradle.executor": "Run",
+    "Gradle.Download Sources.executor": "Run",
+    "Gradle.task-service [:com.task_service.task_service.TaskServiceApplication.main()].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "D:/Programming/Final V1/TaskManagement-System",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "vcs.Git",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="TaskServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.task_service.task_service.TaskServiceApplication" />
+      <module name="task-service.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.task_service.task_service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c2ca65d6-4b60-4ef2-8a99-f945d880f942" name="Changes" comment="" />
+      <created>1753710763683</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1753710763683</updated>
+      <workItem from="1753710766626" duration="22000" />
+      <workItem from="1754133374579" duration="6000" />
+    </task>
+    <task id="LOCAL-00018" summary="applying the changes to DTOs">
+      <option name="closed" value="true" />
+      <created>1763579769829</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1763579769829</updated>
+    </task>
+    <task id="LOCAL-00019" summary="implementing message edit method">
+      <option name="closed" value="true" />
+      <created>1763579884055</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1763579884055</updated>
+    </task>
+    <task id="LOCAL-00020" summary="public DTO class of Unit">
+      <option name="closed" value="true" />
+      <created>1763579932526</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1763579932526</updated>
+    </task>
+    <task id="LOCAL-00021" summary="some repositories created and some methods added to existed ones">
+      <option name="closed" value="true" />
+      <created>1763580037826</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1763580037826</updated>
+    </task>
+    <task id="LOCAL-00022" summary="new entity">
+      <option name="closed" value="true" />
+      <created>1763580071707</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1763580071707</updated>
+    </task>
+    <task id="LOCAL-00023" summary="implemented view, getDetails, search, edit and delete method to Employee">
+      <option name="closed" value="true" />
+      <created>1763580169456</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1763580169456</updated>
+    </task>
+    <task id="LOCAL-00024" summary="added public DTOs to methods in everywhere its needed">
+      <option name="closed" value="true" />
+      <created>1763580379927</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1763580379927</updated>
+    </task>
+    <task id="LOCAL-00025" summary="commit">
+      <option name="closed" value="true" />
+      <created>1763580395254</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1763580395254</updated>
+    </task>
+    <task id="LOCAL-00026" summary="added some needed methods">
+      <option name="closed" value="true" />
+      <created>1763580427059</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1763580427059</updated>
+    </task>
+    <task id="LOCAL-00027" summary="name fixing">
+      <option name="closed" value="true" />
+      <created>1763580457356</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1763580457356</updated>
+    </task>
+    <task id="LOCAL-00028" summary="error fixing">
+      <option name="closed" value="true" />
+      <created>1763580513349</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1763580513349</updated>
+    </task>
+    <task id="LOCAL-00029" summary="creating RoomController and implemented create and delete method">
+      <option name="closed" value="true" />
+      <created>1763580549797</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1763580549797</updated>
+    </task>
+    <task id="LOCAL-00030" summary="changing TaskDTOs to Public one where is needed">
+      <option name="closed" value="true" />
+      <created>1763660628799</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1763660628799</updated>
+    </task>
+    <task id="LOCAL-00031" summary="adding @Component in mappers">
+      <option name="closed" value="true" />
+      <created>1763668179815</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1763668179815</updated>
+    </task>
+    <task id="LOCAL-00032" summary="fixing recurrent cycle relation between ChatRoom, Link and ChatMessageMapper">
+      <option name="closed" value="true" />
+      <created>1763668695934</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1763668695934</updated>
+    </task>
+    <task id="LOCAL-00033" summary="fixing typography errors">
+      <option name="closed" value="true" />
+      <created>1763706201210</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1763706201210</updated>
+    </task>
+    <task id="LOCAL-00034" summary="fixing errors that caused by changing mappers to non-static modification">
+      <option name="closed" value="true" />
+      <created>1763706356338</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1763706356338</updated>
+    </task>
+    <task id="LOCAL-00035" summary="update the create account method">
+      <option name="closed" value="true" />
+      <created>1763790075501</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1763790075501</updated>
+    </task>
+    <task id="LOCAL-00036" summary="adding api for view account">
+      <option name="closed" value="true" />
+      <created>1763792164053</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1763792164053</updated>
+    </task>
+    <task id="LOCAL-00037" summary="updating the AuthorizationManager">
+      <option name="closed" value="true" />
+      <created>1763917233872</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1763917233872</updated>
+    </task>
+    <task id="LOCAL-00038" summary="adding some new actions">
+      <option name="closed" value="true" />
+      <created>1763917263106</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1763917263106</updated>
+    </task>
+    <task id="LOCAL-00039" summary="adding a relation between organization and employee to set a boss on Organization and updating the mapper">
+      <option name="closed" value="true" />
+      <created>1763917372469</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1763917372469</updated>
+    </task>
+    <task id="LOCAL-00040" summary="adding a relation between organization and employee to set a boss on Organization and updating the mapper">
+      <option name="closed" value="true" />
+      <created>1763917444474</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1763917444474</updated>
+    </task>
+    <task id="LOCAL-00041" summary="from now on we work with the account code to generate jwt and do some stuff on it">
+      <option name="closed" value="true" />
+      <created>1763920172468</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1763920172468</updated>
+    </task>
+    <task id="LOCAL-00042" summary="1.AuthorizationManager is done so we used it where it is needed&#10;2.Added some new ActionType (it will be updated in future again)&#10;3.Now finding account is optional to search with phone number or accountID">
+      <option name="closed" value="true" />
+      <created>1763925729385</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1763925729385</updated>
+    </task>
+    <task id="LOCAL-00043" summary="adding throw exceptions to methods">
+      <option name="closed" value="true" />
+      <created>1763995935309</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1763995935309</updated>
+    </task>
+    <task id="LOCAL-00044" summary="1. fixing an error&#10;2. changing PublicAccountDTO to AccountDTO in register and createAccount methods">
+      <option name="closed" value="true" />
+      <created>1763999238016</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1763999238016</updated>
+    </task>
+    <task id="LOCAL-00045" summary="fixing this class to hash properly">
+      <option name="closed" value="true" />
+      <created>1764011463830</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1764011463830</updated>
+    </task>
+    <task id="LOCAL-00046" summary="fixing this controller">
+      <option name="closed" value="true" />
+      <created>1764011546128</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1764011546128</updated>
+    </task>
+    <task id="LOCAL-00047" summary="adding initial message broadcasting(not done yet)">
+      <option name="closed" value="true" />
+      <created>1764011630254</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1764011630254</updated>
+    </task>
+    <task id="LOCAL-00048" summary="fixing the credential bug">
+      <option name="closed" value="true" />
+      <created>1764011658503</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1764011658503</updated>
+    </task>
+    <task id="LOCAL-00049" summary="using AuthorizationManager and adding throw exception on methods">
+      <option name="closed" value="true" />
+      <created>1764011955139</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1764011955139</updated>
+    </task>
+    <task id="LOCAL-00050" summary="fixing a bug">
+      <option name="closed" value="true" />
+      <created>1764097060879</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1764097060879</updated>
+    </task>
+    <task id="LOCAL-00051" summary="updating enums(adding some new status or events)">
+      <option name="closed" value="true" />
+      <created>1764450114897</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1764450114897</updated>
+    </task>
+    <task id="LOCAL-00052" summary="fixing createOrganization bug(setting the boss)">
+      <option name="closed" value="true" />
+      <created>1764450882818</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1764450882818</updated>
+    </task>
+    <task id="LOCAL-00053" summary="1.implementing the delete message&#10;2.improving the broadcasting&#10;3.setRoomDetails implemented&#10;&#10;NOTE : Not done yet">
+      <option name="closed" value="true" />
+      <created>1764451097079</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1764451097079</updated>
+    </task>
+    <task id="LOCAL-00054" summary="adding logger to fix a bug">
+      <option name="closed" value="true" />
+      <created>1764513572784</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1764513572784</updated>
+    </task>
+    <task id="LOCAL-00055" summary="fixing the create organization method bug and removing the logs">
+      <option name="closed" value="true" />
+      <created>1764517214578</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1764517214578</updated>
+    </task>
+    <task id="LOCAL-00056" summary="from now on, getting organization that an account is employee in them api placed in account controller instead of organization and its api changed to &quot;view/{accountCode}/orgs&quot;">
+      <option name="closed" value="true" />
+      <created>1764521569047</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1764521569047</updated>
+    </task>
+    <task id="LOCAL-00057" summary="now deleting organization is soft-delete">
+      <option name="closed" value="true" />
+      <created>1764522429517</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1764522429517</updated>
+    </task>
+    <task id="LOCAL-00058" summary="fixing the api">
+      <option name="closed" value="true" />
+      <created>1764523214816</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1764523214820</updated>
+    </task>
+    <task id="LOCAL-00059" summary="implementing the getOrganizationDetails method">
+      <option name="closed" value="true" />
+      <created>1764607806709</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1764607806709</updated>
+    </task>
+    <task id="LOCAL-00060" summary="implementing the getRoleInOrganization method&#10;this method sends information about client having a role in an specific Organization to the front-end to decide some actions(about UI and access)">
+      <option name="closed" value="true" />
+      <created>1764610061893</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1764610061893</updated>
+    </task>
+    <task id="LOCAL-00061" summary="bug :)">
+      <option name="closed" value="true" />
+      <created>1764697183762</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1764697183762</updated>
+    </task>
+    <task id="LOCAL-00062" summary="bug :)">
+      <option name="closed" value="true" />
+      <created>1764697494286</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1764697494286</updated>
+    </task>
+    <task id="LOCAL-00063" summary="fixing changeBoss bug">
+      <option name="closed" value="true" />
+      <created>1764783723735</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1764783723735</updated>
+    </task>
+    <task id="LOCAL-00064" summary="adding an API to show the units of an organization">
+      <option name="closed" value="true" />
+      <created>1765989284678</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1765989284678</updated>
+    </task>
+    <task id="LOCAL-00065" summary="implementing the unit getDetails method">
+      <option name="closed" value="true" />
+      <created>1766596574904</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1766596574904</updated>
+    </task>
+    <task id="LOCAL-00066" summary="there is no need for client id in getDetails method to authorize the client so i deleted it">
+      <option name="closed" value="true" />
+      <created>1767555472945</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1767555472945</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="adding throw exceptions to methods" />
+    <MESSAGE value="1. fixing an error&#10;2. changing PublicAccountDTO to AccountDTO in register and createAccount methods" />
+    <MESSAGE value="fixing this class to hash properly" />
+    <MESSAGE value="fixing this controller" />
+    <MESSAGE value="adding initial message broadcasting(not done yet)" />
+    <MESSAGE value="fixing the credential bug" />
+    <MESSAGE value="using AuthorizationManager and adding throw exception on methods" />
+    <MESSAGE value="fixing a bug" />
+    <MESSAGE value="updating enums(adding some new status or events)" />
+    <MESSAGE value="fixing createOrganization bug(setting the boss)" />
+    <MESSAGE value="1.implementing the delete message&#10;2.improving the broadcasting&#10;3.setRoomDetails implemented" />
+    <MESSAGE value="1.implementing the delete message&#10;2.improving the broadcasting&#10;3.setRoomDetails implemented&#10;&#10;NOTE : Not done yet" />
+    <MESSAGE value="adding logger to fix a bug" />
+    <MESSAGE value="fixing the create organization method bug and removing the logs" />
+    <MESSAGE value="from now on, getting organization that an account is employee in them api placed in account controller instead of organization and its api changed to &quot;view/{accountCode}/orgs&quot;" />
+    <MESSAGE value="now deleting organization is soft-delete" />
+    <MESSAGE value="fixing the api" />
+    <MESSAGE value="implementing the getOrganizationDetails method" />
+    <MESSAGE value="implementing the getRoleInOrganization method&#10;this method sends information about client having a role in an specific Organization to the front-end to decide some actions(about UI and access)" />
+    <MESSAGE value="bug :)" />
+    <MESSAGE value="fixing changeBoss bug" />
+    <MESSAGE value="adding an API to show the units of an organization" />
+    <MESSAGE value="implementing the unit getDetails method" />
+    <MESSAGE value="there is no need for client id in getDetails method to authorize the client so i deleted it" />
+    <MESSAGE value="implementing the process of removing an Employee from unit :&#10; &#10; - This process will just remove the Employment object of employee from the unit and not deleting all the data about the Employment&#10; - Adding the endpoint to the Controller layer&#10; - Adding the removeEmployee method to the service layer&#10; - Change logic of the unit part of the AuthorizationManager to perform the removeEmployee method but it's not done" />
+    <option name="LAST_COMMIT_MESSAGE" value="implementing the process of removing an Employee from unit :&#10; &#10; - This process will just remove the Employment object of employee from the unit and not deleting all the data about the Employment&#10; - Adding the endpoint to the Controller layer&#10; - Adding the removeEmployee method to the service layer&#10; - Change logic of the unit part of the AuthorizationManager to perform the removeEmployee method but it's not done" />
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
+  </component>
+</project>
