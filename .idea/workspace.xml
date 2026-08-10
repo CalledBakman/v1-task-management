@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2ca65d6-4b60-4ef2-8a99-f945d880f942" name="Changes" comment="implementing the process of removing an Employee from unit :&#10; &#10; - This process will just remove the Employment object of employee from the unit and not deleting all the data about the Employment&#10; - Adding the endpoint to the Controller layer&#10; - Adding the removeEmployee method to the service layer&#10; - Change logic of the unit part of the AuthorizationManager to perform the removeEmployee method but it's not done" />
+    <list default="true" id="c2ca65d6-4b60-4ef2-8a99-f945d880f942" name="Changes" comment="initial commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -70,26 +72,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.task.executor": "Run",
-    "Gradle.D:/Programming/Final V1/TaskManagement-System/task-service/build.gradle.executor": "Run",
-    "Gradle.Download Sources.executor": "Run",
-    "Gradle.task-service [:com.task_service.task_service.TaskServiceApplication.main()].executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "D:/Programming/Final V1/TaskManagement-System",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "vcs.Git",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.task.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.D:/Programming/Final V1/TaskManagement-System/task-service/build.gradle.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Download Sources.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.task-service [:com.task_service.task_service.TaskServiceApplication.main()].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Programming/Final V1/TaskManagement-System&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="TaskServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.task_service.task_service.TaskServiceApplication" />
@@ -114,22 +116,6 @@
       <updated>1753710763683</updated>
       <workItem from="1753710766626" duration="22000" />
       <workItem from="1754133374579" duration="6000" />
-    </task>
-    <task id="LOCAL-00018" summary="applying the changes to DTOs">
-      <option name="closed" value="true" />
-      <created>1763579769829</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1763579769829</updated>
-    </task>
-    <task id="LOCAL-00019" summary="implementing message edit method">
-      <option name="closed" value="true" />
-      <created>1763579884055</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1763579884055</updated>
     </task>
     <task id="LOCAL-00020" summary="public DTO class of Unit">
       <option name="closed" value="true" />
@@ -507,7 +493,23 @@
       <option name="project" value="LOCAL" />
       <updated>1767555472945</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="initial commit">
+      <option name="closed" value="true" />
+      <created>1786273446424</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1786273446424</updated>
+    </task>
+    <task id="LOCAL-00068" summary="initial commit">
+      <option name="closed" value="true" />
+      <created>1786273923420</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1786273923420</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -537,7 +539,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="adding throw exceptions to methods" />
     <MESSAGE value="1. fixing an error&#10;2. changing PublicAccountDTO to AccountDTO in register and createAccount methods" />
     <MESSAGE value="fixing this class to hash properly" />
     <MESSAGE value="fixing this controller" />
@@ -562,7 +563,8 @@
     <MESSAGE value="implementing the unit getDetails method" />
     <MESSAGE value="there is no need for client id in getDetails method to authorize the client so i deleted it" />
     <MESSAGE value="implementing the process of removing an Employee from unit :&#10; &#10; - This process will just remove the Employment object of employee from the unit and not deleting all the data about the Employment&#10; - Adding the endpoint to the Controller layer&#10; - Adding the removeEmployee method to the service layer&#10; - Change logic of the unit part of the AuthorizationManager to perform the removeEmployee method but it's not done" />
-    <option name="LAST_COMMIT_MESSAGE" value="implementing the process of removing an Employee from unit :&#10; &#10; - This process will just remove the Employment object of employee from the unit and not deleting all the data about the Employment&#10; - Adding the endpoint to the Controller layer&#10; - Adding the removeEmployee method to the service layer&#10; - Change logic of the unit part of the AuthorizationManager to perform the removeEmployee method but it's not done" />
+    <MESSAGE value="initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
