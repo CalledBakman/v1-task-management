@@ -6,6 +6,7 @@ import com.task_service.task_service.dto.TaskDTO;
 import com.task_service.task_service.dto.TaskStatusDTO;
 import com.task_service.task_service.entity.Task;
 import com.task_service.task_service.entity.TaskStatus;
+import com.task_service.task_service.entity.TaskStatusType;
 import com.task_service.task_service.exception.EntityNotFound;
 import com.task_service.task_service.mapper.*;
 import com.task_service.task_service.repository.*;
@@ -49,7 +50,6 @@ public class TaskServiceImpl implements TaskService {
     private final TaskStatusTypeRepository statusTypeRepository;
     private final TaskStatusService taskStatusService;
     private final RescheduleService rescheduleService;
-    private final TaskStatusTypeMapper typeMapper;
     private final TaskStatusMapper taskStatusMapper;
 
     private final Logger logger = LoggerFactory.getLogger(TaskServiceImpl.class);
@@ -91,7 +91,7 @@ public class TaskServiceImpl implements TaskService {
         TaskStatusDTO statusDTO = new TaskStatusDTO();
         statusDTO.setTime(LocalDateTime.now());
         statusDTO.setTaskCode(taskCode);
-        statusDTO.setTaskStatusType(typeMapper.toDTO(statusTypeRepository.findByType(task.getTaskStatus().getTaskStatusType().getType())));
+        statusDTO.setTaskStatusType(TaskStatusType.CREATED);
         taskStatusService.createTaskStatus(statusDTO);
         task.setTaskStatus(statusRepository.findByTaskCode(taskCode));
 
@@ -161,7 +161,7 @@ public class TaskServiceImpl implements TaskService {
             predicates.add(cb.equal(root.get("priority"), priority));
 
         if (taskStatusDTO != null)
-            predicates.add(cb.equal(root.get("taskStatus").get("taskStatusType").get("type"), taskStatusDTO.getTaskStatusType().getType()));
+            predicates.add(cb.equal(root.get("taskStatus").get("taskStatusType").get("type"), taskStatusDTO.getTaskStatusType()));
 
         if (ownerName != null) {
             Predicate accountName = cb.like(cb.lower(root.get("owner").get("employee").get("account").get("accountName")), "%" + ownerName.toLowerCase() + "%");

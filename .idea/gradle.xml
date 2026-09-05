@@ -5,6 +5,8 @@
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/task-service" />
+        <option name="gradleHome" value="C:\ProgramData\chocolatey\lib\gradle\tools\gradle-8.13" />
+        <option name="gradleJvm" value="23" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/task-service" />

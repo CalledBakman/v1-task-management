@@ -27,11 +27,11 @@ public class TaskController {
     }
 
     @GetMapping("{taskCode}")
-    public ResponseEntity<PublicTaskDTO> getTaskByUnitCode(@PathVariable String taskCode) {
+    public ResponseEntity<PublicTaskDTO> getTaskByTaskCode(@PathVariable String taskCode) {
         return new ResponseEntity<>(taskService.getTaskByTaskCode(taskCode), HttpStatus.OK);
     }
 
-    @GetMapping("{accountCode}")
+    @GetMapping("account/{accountCode}")
     public ResponseEntity<List<PublicTaskDTO>> getAccountTasks(@PathVariable String accountCode,
                                                          @RequestParam String status){
         return new ResponseEntity<>(taskService.getTasksByAccountCode(accountCode, status), HttpStatus.OK);

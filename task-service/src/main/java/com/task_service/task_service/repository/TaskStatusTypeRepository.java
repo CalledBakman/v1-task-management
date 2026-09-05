@@ -7,6 +7,6 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface TaskStatusTypeRepository extends JpaRepository<TaskStatusType, Long> {
 
-    TaskStatusType findByType(String type);
+    TaskStatusType findByType(TaskStatusType type);
 
 }
