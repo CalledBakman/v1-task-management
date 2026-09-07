@@ -4,6 +4,7 @@ import com.task_service.task_service.dto.*;
 import com.task_service.task_service.entity.*;
 import com.task_service.task_service.exception.EntityNotFound;
 import com.task_service.task_service.mapper.AccountMapper;
+import com.task_service.task_service.mapper.EmploymentMapper;
 import com.task_service.task_service.mapper.OrganizationMapper;
 import com.task_service.task_service.mapper.UnitMapper;
 import com.task_service.task_service.repository.EmployeeRepository;
@@ -17,9 +18,7 @@ import com.task_service.task_service.repository.AccountRepository;
 import java.nio.file.AccessDeniedException;
 import java.security.NoSuchAlgorithmException;
 import java.time.LocalDateTime;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.UUID;
+import java.util.*;
 import java.util.stream.Collectors;
 
 import com.task_service.task_service.utility.PasswordHasher.Hash;
@@ -57,6 +56,8 @@ public class AccountServiceImpl implements AccountService {
     private OrganizationMapper organizationMapper;
     @Autowired
     private UnitMapper unitMapper;
+    @Autowired
+    private EmploymentMapper employmentMapper;
     @Autowired
     private AuthorizationManager authorizationManager;
 
@@ -199,6 +200,20 @@ public class AccountServiceImpl implements AccountService {
         return organizations.stream()
                 .map(organizationMapper::transferEntityToPublic)
                 .collect(Collectors.toList());
+    }
+
+    @Override
+    public Map<PublicEmploymentDTO, PublicOrganizationDTO> getRoles(String accountCode) {
+        Account account = accountRepository.findByAccountCode(accountCode);
+        List<Employment> employments = employmentRepository.findByEmployee_Account(account);
+        Map<PublicEmploymentDTO, PublicOrganizationDTO> result = new HashMap<>();
+
+        for (Employment employment : employments) {
+            result.put(employmentMapper.transferEntityToPublic(employment)
+                    ,organizationMapper.transferEntityToPublic(employment.getUnit().getOrganization()));
+        }
+
+        return result;
     }
 
     @Override

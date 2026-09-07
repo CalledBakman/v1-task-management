@@ -13,6 +13,7 @@ import java.nio.file.AccessDeniedException;
 import java.security.NoSuchAlgorithmException;
 import java.text.MessageFormat;
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping("api/accounts")
@@ -56,6 +57,11 @@ public class AccountController {
     @GetMapping("view/{accountCode}/orgs")
     public ResponseEntity<List<PublicOrganizationDTO>> getOrganizationsByAccountID(@PathVariable String accountCode){
         return new ResponseEntity<>(service.getOrganizationsByAccountCode(accountCode), HttpStatus.OK);
+    }
+
+    @GetMapping("{accountCode}/roles")
+    public ResponseEntity<Map<PublicEmploymentDTO, PublicOrganizationDTO>> getRoles(String accountCode){
+        return new ResponseEntity<>(service.getRoles(accountCode), HttpStatus.OK);
     }
 
     @GetMapping("findAccount")

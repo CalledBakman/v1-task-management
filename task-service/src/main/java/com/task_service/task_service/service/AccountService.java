@@ -5,6 +5,7 @@ import com.task_service.task_service.dto.*;
 import java.nio.file.AccessDeniedException;
 import java.security.NoSuchAlgorithmException;
 import java.util.List;
+import java.util.Map;
 
 import jakarta.annotation.Nullable;
 import org.springframework.stereotype.Service;
@@ -31,4 +32,6 @@ public interface AccountService {
     List<PublicOrganizationDTO> getAccountOrganizations(String name);
 
     List<PublicOrganizationDTO> getOrganizationsByAccountCode(String accountCode);
+
+    Map<PublicEmploymentDTO, PublicOrganizationDTO> getRoles(String accountCode);
 }

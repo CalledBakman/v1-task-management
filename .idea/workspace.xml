@@ -4,22 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2ca65d6-4b60-4ef2-8a99-f945d880f942" name="Changes" comment="initial commit">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="c2ca65d6-4b60-4ef2-8a99-f945d880f942" name="Changes" comment="changed task status type to an enum and it will be controlled with back-end itself">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/task-service/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-service/src/main/java/com/task_service/task_service/controller/TaskController.java" beforeDir="false" afterPath="$PROJECT_DIR$/task-service/src/main/java/com/task_service/task_service/controller/TaskController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-service/src/main/java/com/task_service/task_service/dto/TaskStatusDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/task-service/src/main/java/com/task_service/task_service/dto/TaskStatusDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-service/src/main/java/com/task_service/task_service/dto/TaskStatusTypeDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-service/src/main/java/com/task_service/task_service/entity/TaskStatusType.java" beforeDir="false" afterPath="$PROJECT_DIR$/task-service/src/main/java/com/task_service/task_service/entity/TaskStatusType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-service/src/main/java/com/task_service/task_service/mapper/TaskStatusTypeMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-service/src/main/java/com/task_service/task_service/repository/TaskStatusTypeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/task-service/src/main/java/com/task_service/task_service/repository/TaskStatusTypeRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-service/src/main/java/com/task_service/task_service/service/TaskStatusTypeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/task-service/src/main/java/com/task_service/task_service/service/TaskStatusTypeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-service/src/main/java/com/task_service/task_service/service/impl/TaskServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/task-service/src/main/java/com/task_service/task_service/service/impl/TaskServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-service/src/main/java/com/task_service/task_service/service/impl/TaskStatusTypeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/task-service/src/main/java/com/task_service/task_service/service/impl/TaskStatusTypeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-service/src/main/java/com/task_service/task_service/controller/AccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/task-service/src/main/java/com/task_service/task_service/controller/AccountController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-service/src/main/java/com/task_service/task_service/service/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/task-service/src/main/java/com/task_service/task_service/service/AccountService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-service/src/main/java/com/task_service/task_service/service/impl/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/task-service/src/main/java/com/task_service/task_service/service/impl/AccountServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,9 +92,22 @@
       <workItem from="1786537355609" duration="223000" />
       <workItem from="1787397158471" duration="411000" />
     </task>
+    <task id="LOCAL-00001" summary="changed task status type to an enum and it will be controlled with back-end itself">
+      <option name="closed" value="true" />
+      <created>1788586734870</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1788586734870</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="changed task status type to an enum and it will be controlled with back-end itself" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed task status type to an enum and it will be controlled with back-end itself" />
   </component>
 </project>
