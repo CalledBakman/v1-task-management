@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2ca65d6-4b60-4ef2-8a99-f945d880f942" name="Changes" comment="Created the &quot;api/accounts/{accountCode}/roles&quot; :&#10;- this api gets an accountCode and finds the account then returns a map&lt;PublicEmploymentDTO, PublicOrganizationDTO&gt; to show how many organization this account has an employment&#10;- it can be used for changes roles or log in">
+    <list default="true" id="c2ca65d6-4b60-4ef2-8a99-f945d880f942" name="Changes" comment="task status mapper deleted">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -105,7 +105,15 @@
       <option name="project" value="LOCAL" />
       <updated>1788816946944</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="task status mapper deleted">
+      <option name="closed" value="true" />
+      <created>1788977422211</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1788977422211</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,6 +122,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="changed task status type to an enum and it will be controlled with back-end itself" />
     <MESSAGE value="Created the &quot;api/accounts/{accountCode}/roles&quot; :&#10;- this api gets an accountCode and finds the account then returns a map&lt;PublicEmploymentDTO, PublicOrganizationDTO&gt; to show how many organization this account has an employment&#10;- it can be used for changes roles or log in" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created the &quot;api/accounts/{accountCode}/roles&quot; :&#10;- this api gets an accountCode and finds the account then returns a map&lt;PublicEmploymentDTO, PublicOrganizationDTO&gt; to show how many organization this account has an employment&#10;- it can be used for changes roles or log in" />
+    <MESSAGE value="task status mapper deleted" />
+    <option name="LAST_COMMIT_MESSAGE" value="task status mapper deleted" />
   </component>
 </project>
