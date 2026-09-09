@@ -47,7 +47,6 @@ public class TaskServiceImpl implements TaskService {
     private final AccountRepository accountRepository;
     private final UnitRepository unitRepository;
     private final TaskStatusRepository statusRepository;
-    private final TaskStatusTypeRepository statusTypeRepository;
     private final TaskStatusService taskStatusService;
     private final RescheduleService rescheduleService;
     private final TaskStatusMapper taskStatusMapper;

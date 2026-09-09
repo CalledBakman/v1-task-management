@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2ca65d6-4b60-4ef2-8a99-f945d880f942" name="Changes" comment="changed task status type to an enum and it will be controlled with back-end itself">
+    <list default="true" id="c2ca65d6-4b60-4ef2-8a99-f945d880f942" name="Changes" comment="Created the &quot;api/accounts/{accountCode}/roles&quot; :&#10;- this api gets an accountCode and finds the account then returns a map&lt;PublicEmploymentDTO, PublicOrganizationDTO&gt; to show how many organization this account has an employment&#10;- it can be used for changes roles or log in">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-service/src/main/java/com/task_service/task_service/controller/AccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/task-service/src/main/java/com/task_service/task_service/controller/AccountController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-service/src/main/java/com/task_service/task_service/service/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/task-service/src/main/java/com/task_service/task_service/service/AccountService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-service/src/main/java/com/task_service/task_service/service/impl/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/task-service/src/main/java/com/task_service/task_service/service/impl/AccountServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +97,15 @@
       <option name="project" value="LOCAL" />
       <updated>1788586734870</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Created the &quot;api/accounts/{accountCode}/roles&quot; :&#10;- this api gets an accountCode and finds the account then returns a map&lt;PublicEmploymentDTO, PublicOrganizationDTO&gt; to show how many organization this account has an employment&#10;- it can be used for changes roles or log in">
+      <option name="closed" value="true" />
+      <created>1788816946944</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1788816946944</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -108,6 +113,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="changed task status type to an enum and it will be controlled with back-end itself" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed task status type to an enum and it will be controlled with back-end itself" />
+    <MESSAGE value="Created the &quot;api/accounts/{accountCode}/roles&quot; :&#10;- this api gets an accountCode and finds the account then returns a map&lt;PublicEmploymentDTO, PublicOrganizationDTO&gt; to show how many organization this account has an employment&#10;- it can be used for changes roles or log in" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created the &quot;api/accounts/{accountCode}/roles&quot; :&#10;- this api gets an accountCode and finds the account then returns a map&lt;PublicEmploymentDTO, PublicOrganizationDTO&gt; to show how many organization this account has an employment&#10;- it can be used for changes roles or log in" />
   </component>
 </project>
