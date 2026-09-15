@@ -4,8 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2ca65d6-4b60-4ef2-8a99-f945d880f942" name="Changes" comment="task status mapper deleted">
+    <list default="true" id="c2ca65d6-4b60-4ef2-8a99-f945d880f942" name="Changes" comment="fixed a little bug">
+      <change afterPath="$PROJECT_DIR$/task-service/src/main/java/com/task_service/task_service/dto/TaskStatusTypeDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task-service/src/main/java/com/task_service/task_service/mapper/TaskStatusTypeMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task-service/src/main/java/com/task_service/task_service/repository/TaskStatusTypeRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-service/src/main/java/com/task_service/task_service/controller/TaskController.java" beforeDir="false" afterPath="$PROJECT_DIR$/task-service/src/main/java/com/task_service/task_service/controller/TaskController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-service/src/main/java/com/task_service/task_service/entity/TaskStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/task-service/src/main/java/com/task_service/task_service/entity/TaskStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-service/src/main/java/com/task_service/task_service/entity/TaskStatusType.java" beforeDir="false" afterPath="$PROJECT_DIR$/task-service/src/main/java/com/task_service/task_service/entity/TaskStatusType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-service/src/main/java/com/task_service/task_service/repository/TaskRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/task-service/src/main/java/com/task_service/task_service/repository/TaskRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-service/src/main/java/com/task_service/task_service/service/TaskService.java" beforeDir="false" afterPath="$PROJECT_DIR$/task-service/src/main/java/com/task_service/task_service/service/TaskService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-service/src/main/java/com/task_service/task_service/service/impl/TaskServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/task-service/src/main/java/com/task_service/task_service/service/impl/TaskServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/task-service/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +49,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -61,6 +73,7 @@
   &quot;keyToString&quot;: {
     &quot;Application.TaskServiceApplication.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.D:/Programming/Final V1/TaskManagement-System/task-service.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Download Sources.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.task-service [:com.task_service.task_service.TaskServiceApplication.main()].executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
@@ -113,7 +126,23 @@
       <option name="project" value="LOCAL" />
       <updated>1788977422211</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fixed a little bug">
+      <option name="closed" value="true" />
+      <created>1788985304746</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1788985304746</updated>
+    </task>
+    <task id="LOCAL-00005" summary="fixed a little bug">
+      <option name="closed" value="true" />
+      <created>1788985316338</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1788985316338</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -123,6 +152,18 @@
     <MESSAGE value="changed task status type to an enum and it will be controlled with back-end itself" />
     <MESSAGE value="Created the &quot;api/accounts/{accountCode}/roles&quot; :&#10;- this api gets an accountCode and finds the account then returns a map&lt;PublicEmploymentDTO, PublicOrganizationDTO&gt; to show how many organization this account has an employment&#10;- it can be used for changes roles or log in" />
     <MESSAGE value="task status mapper deleted" />
-    <option name="LAST_COMMIT_MESSAGE" value="task status mapper deleted" />
+    <MESSAGE value="fixed a little bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed a little bug" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/task-service/src/main/java/com/task_service/task_service/service/impl/AccountServiceImpl.java</url>
+          <line>206</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
