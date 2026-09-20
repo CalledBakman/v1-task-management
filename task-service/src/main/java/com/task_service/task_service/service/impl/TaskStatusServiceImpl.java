@@ -5,6 +5,7 @@ import com.task_service.task_service.entity.TaskStatus;
 import com.task_service.task_service.mapper.TaskStatusMapper;
 import com.task_service.task_service.repository.TaskRepository;
 import com.task_service.task_service.repository.TaskStatusRepository;
+import com.task_service.task_service.repository.TaskStatusTypeRepository;
 import com.task_service.task_service.service.TaskStatusService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -15,6 +16,8 @@ public class TaskStatusServiceImpl implements TaskStatusService {
 
     @Autowired
     private TaskStatusRepository repository;
+    @Autowired
+    private TaskStatusTypeRepository typeRepository;
     @Autowired
     private TaskRepository taskRepository;
     @Autowired
@@ -34,7 +37,7 @@ public class TaskStatusServiceImpl implements TaskStatusService {
 
     private void setDetails(TaskStatus taskStatus, TaskStatusDTO taskStatusDTO) {
         if (taskStatusDTO.getTaskCode() != null) taskStatus.setTaskCode(taskStatusDTO.getTaskCode());
-        if (taskStatusDTO.getTaskStatusType() != null) taskStatus.setTaskStatusType(taskStatusDTO.getTaskStatusType());
+        if (taskStatusDTO.getTaskStatusType() != null) taskStatus.setTaskStatusType(typeRepository.findByType(taskStatusDTO.getTaskStatusType().getType()));
     }
 
     @Override
