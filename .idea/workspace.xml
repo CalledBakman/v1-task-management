@@ -4,20 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2ca65d6-4b60-4ef2-8a99-f945d880f942" name="Changes" comment="new API (GET api/roles):&#10;it returns all types of roles that we have in the database">
+    <list default="true" id="c2ca65d6-4b60-4ef2-8a99-f945d880f942" name="Changes" comment="adding task status type with repo and not manually">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-service/src/main/java/com/task_service/task_service/controller/RoleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/task-service/src/main/java/com/task_service/task_service/controller/RoleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-service/src/main/java/com/task_service/task_service/entity/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/task-service/src/main/java/com/task_service/task_service/entity/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-service/src/main/java/com/task_service/task_service/entity/Employment.java" beforeDir="false" afterPath="$PROJECT_DIR$/task-service/src/main/java/com/task_service/task_service/entity/Employment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-service/src/main/java/com/task_service/task_service/entity/Organization.java" beforeDir="false" afterPath="$PROJECT_DIR$/task-service/src/main/java/com/task_service/task_service/entity/Organization.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-service/src/main/java/com/task_service/task_service/entity/Reschedule.java" beforeDir="false" afterPath="$PROJECT_DIR$/task-service/src/main/java/com/task_service/task_service/entity/Reschedule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-service/src/main/java/com/task_service/task_service/entity/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/task-service/src/main/java/com/task_service/task_service/entity/Task.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-service/src/main/java/com/task_service/task_service/entity/TaskStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/task-service/src/main/java/com/task_service/task_service/entity/TaskStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-service/src/main/java/com/task_service/task_service/entity/Unit.java" beforeDir="false" afterPath="$PROJECT_DIR$/task-service/src/main/java/com/task_service/task_service/entity/Unit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-service/src/main/java/com/task_service/task_service/entity/WorkTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/task-service/src/main/java/com/task_service/task_service/entity/WorkTime.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-service/src/main/java/com/task_service/task_service/service/impl/EmploymentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/task-service/src/main/java/com/task_service/task_service/service/impl/EmploymentServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-service/src/main/java/com/task_service/task_service/service/impl/OrganizationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/task-service/src/main/java/com/task_service/task_service/service/impl/OrganizationServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task-service/src/main/java/com/task_service/task_service/service/impl/UnitServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/task-service/src/main/java/com/task_service/task_service/service/impl/UnitServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/task-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/task-service/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -72,29 +60,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.TaskServiceApplication.executor": "Run",
-    "Gradle.D:/Programming/Final V1/TaskManagement-System/task-service.executor": "Run",
-    "Gradle.Download Sources.executor": "Run",
-    "Gradle.task-service [:com.task_service.task_service.TaskServiceApplication.main()].executor": "Run",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "D:/Programming/Final V1/TaskManagement-System",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.TaskServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.D:/Programming/Final V1/TaskManagement-System/task-service.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Download Sources.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.task-service [:com.task_service.task_service.TaskServiceApplication.main()].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Programming/Final V1/TaskManagement-System&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
   }
-}]]></component>
+}</component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="c2ca65d6-4b60-4ef2-8a99-f945d880f942" name="Changes" comment="initial commit" />
@@ -161,7 +149,23 @@
       <option name="project" value="LOCAL" />
       <updated>1789747462464</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="1. adding @JsonBackReference and &#10;    @JsonBackReference where its needed&#10;2. there was a transient object error in EmploymentServiceImpl that i fixed">
+      <option name="closed" value="true" />
+      <created>1789840350873</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1789840350873</updated>
+    </task>
+    <task id="LOCAL-00009" summary="adding task status type with repo and not manually">
+      <option name="closed" value="true" />
+      <created>1789896469661</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1789896469661</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,7 +178,9 @@
     <MESSAGE value="fixed a little bug" />
     <MESSAGE value="got back to the entity form of taskStatusType and its not enum anymore" />
     <MESSAGE value="new API (GET api/roles):&#10;it returns all types of roles that we have in the database" />
-    <option name="LAST_COMMIT_MESSAGE" value="new API (GET api/roles):&#10;it returns all types of roles that we have in the database" />
+    <MESSAGE value="1. adding @JsonBackReference and &#10;    @JsonBackReference where its needed&#10;2. there was a transient object error in EmploymentServiceImpl that i fixed" />
+    <MESSAGE value="adding task status type with repo and not manually" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding task status type with repo and not manually" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
